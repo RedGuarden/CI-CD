@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-        - uses: appleboy/ssh-action@v1.2.2
+      - uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.IP }}
           username: ubuntu
